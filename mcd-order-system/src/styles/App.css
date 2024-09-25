@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: whitesmoke;
+  color: #333;
+}
+
+.logo-container {
+  position: relative;
+  width: 100%;
+  text-align: center; /* Horizontally centers the image */
+ 
+}
+
+.logo-container img {
+  width: 300px; /* Set the width to a smaller size */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 10; /* Ensures the image is on top of other elements */
+}
+
+.orders-container {
+  display: flex;  /* Using Flexbox */
+  justify-content: space-between;  /* Spread items to the left and right */
+  margin-top: 20px;
+  gap: 20px;  /* Space between the two containers */
+}
+
+.pending-orders, .completed-orders {
+  width: 48%;  /* Each container takes almost half the screen width */
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  /* Add shadow for a professional look */
+}
+
+.button-container {
+  display: flex;               
+  flex-direction: row;       
+  justify-content: center;      /* Center buttons vertically */
+  align-items: center;          /* Center buttons horizontally */
+  height: 10vh;                /* Full height of the viewport */
+}
+
+.order-button {
+  background-color: #c8102e; /* McDonald's red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin: 10px 10px;
+  transition: background-color 0.3s;
+}
+
+.order-button:hover {
+  background-color: #a30724;    /* Darker red on hover */
+}

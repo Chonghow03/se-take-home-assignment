@@ -1,0 +1,36 @@
+.order-list {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+
+
+.success {
+    font-weight: bold;
+    color: #28a745; /* Green for complete */
+}
+
+.pending {
+    font-weight: bold;
+    color: red; /* Green for complete */
+}
+
+.normal {
+    color: blue; /* Blue for normal orders */
+}
+
+.vip {
+    color: rgb(192, 172, 61); /* Red for VIP orders */
+}
