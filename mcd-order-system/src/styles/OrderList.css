@@ -1,36 +1,34 @@
 .order-list {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Maximum width of the order list container */
+    margin: 20px auto; /* Center the container with top and bottom margins */
+    padding: 10px; /* Padding inside the container */
+    border: 1px solid #ccc; /* Light gray border around the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    background-color: white; /* White background for the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .order-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #f0f0f0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out child elements evenly */
+    padding: 10px; /* Padding for each order item */
+    border-bottom: 1px solid #f0f0f0; /* Light gray bottom border for separation */
 }
 
-
-
 .success {
-    font-weight: bold;
-    color: #28a745; /* Green for complete */
+    font-weight: bold; /* Make complete status bold */
+    color: #28a745; /* Green color for complete orders */
 }
 
 .pending {
-    font-weight: bold;
-    color: red; /* Green for complete */
+    font-weight: bold; /* Make pending status bold */
+    color: red; /* Red color for pending orders */
 }
 
 .normal {
-    color: blue; /* Blue for normal orders */
+    color: blue; /* Blue color for normal orders */
 }
 
 .vip {
-    color: rgb(192, 172, 61); /* Red for VIP orders */
+    color: rgb(192, 172, 61); /* Golden color for VIP orders */
 }

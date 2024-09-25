@@ -5,6 +5,7 @@ import { useOrderController } from './hooks/useOrderController';
 import './styles/App.css';
 
 const App = () => {
+  // Destructure the necessary state and functions from the custom hook
   const {
     orders,
     addNormalOrder,
@@ -14,7 +15,7 @@ const App = () => {
     decreaseBot,
   } = useOrderController();
 
-  // Separate orders based on status
+  // Separate orders based on their status
   const pendingOrders = orders.filter(order => order.status === 'PENDING');
   const completedOrders = orders.filter(order => order.status === 'COMPLETE');
 

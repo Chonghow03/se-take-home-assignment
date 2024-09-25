@@ -1,63 +1,71 @@
+/* Reset margins and paddings for all elements to ensure consistent spacing */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
 }
 
+/* Global styles for the body element */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: whitesmoke;
-  color: #333;
+  font-family: 'Arial', sans-serif; /* Set a clean sans-serif font for the entire application */
+  background-color: whitesmoke; /* Light background color for better contrast */
+  color: #333; /* Dark text color for readability */
 }
 
+/* Container for the logo, centers the logo image */
 .logo-container {
-  position: relative;
-  width: 100%;
-  text-align: center; /* Horizontally centers the image */
- 
+  position: relative; /* Positioning context for child elements */
+  width: 100%; /* Full width of the viewport */
+  text-align: center; /* Horizontally center the logo */
 }
 
+/* Styles for the logo image */
 .logo-container img {
-  width: 300px; /* Set the width to a smaller size */
-  height: auto; /* Maintain aspect ratio */
-  z-index: 10; /* Ensures the image is on top of other elements */
+  width: 300px; /* Fixed width for the logo */
+  height: auto; /* Maintain aspect ratio of the logo */
+  z-index: 10; /* Ensures the image appears above other elements */
 }
 
+/* Flex container for the orders section */
 .orders-container {
-  display: flex;  /* Using Flexbox */
-  justify-content: space-between;  /* Spread items to the left and right */
-  margin-top: 20px;
-  gap: 20px;  /* Space between the two containers */
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Distribute space between child elements */
+  margin-top: 20px; /* Space above the orders section */
+  gap: 20px; /* Space between the two order containers */
 }
 
+/* Styles for individual order sections */
 .pending-orders, .completed-orders {
-  width: 48%;  /* Each container takes almost half the screen width */
-  border: 2px solid #ddd;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  /* Add shadow for a professional look */
+  width: 48%; /* Each container takes up almost half the width */
+  border: 2px solid #ddd; /* Light gray border for separation */
+  padding: 20px; /* Padding inside each order container */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* Flex container for the button section */
 .button-container {
-  display: flex;               
-  flex-direction: row;       
-  justify-content: center;      /* Center buttons vertically */
-  align-items: center;          /* Center buttons horizontally */
-  height: 10vh;                /* Full height of the viewport */
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: row; /* Arrange buttons in a row */
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Center buttons vertically */
+  height: 10vh; /* Set height relative to viewport */
 }
 
+/* Styles for the order buttons */
 .order-button {
-  background-color: #c8102e; /* McDonald's red */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 12px 20px;
-  font-size: 1.1em;
-  cursor: pointer;
-  margin: 10px 10px;
-  transition: background-color 0.3s;
+  background-color: #c8102e; /* McDonald's signature red */
+  color: white; /* White text for contrast */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Slightly rounded corners */
+  padding: 12px 20px; /* Padding for button size */
+  font-size: 1.1em; /* Slightly larger font for readability */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin: 10px; /* Margin around buttons */
+  transition: background-color 0.3s; /* Smooth transition for background color on hover */
 }
 
+/* Hover effect for order buttons */
 .order-button:hover {
-  background-color: #a30724;    /* Darker red on hover */
+  background-color: #a30724; /* Darker red on hover for feedback */
 }
